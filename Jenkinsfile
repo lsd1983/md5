@@ -11,7 +11,7 @@ pipeline {
         
         stage('Deploy'){
             steps{
-                echo 'Doploying Container'
+                echo 'Doploying Containers'
                 echo 'Stopping all md services'
                 
                 
