@@ -26,6 +26,6 @@ if (isset($_POST['text'])){
 		
 	}
 } else {
-echo 'No String Provided';
+echo 'No Strings Provided';
 }
 ?>
