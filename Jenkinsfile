@@ -13,7 +13,8 @@ pipeline {
             steps{
                 echo 'Doploying Container'
                 echo 'Stopping all md services'
-                
+                sh 'docker stop $(docker ps -a -q)
+                sh 'docker system prune -f'
                 
                 
                 sh 'docker run -dit -p 8000:80 --name md5 md5:latest'
