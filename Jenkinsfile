@@ -11,7 +11,7 @@ pipeline {
         
         stage('Deploy'){
             steps{
-                echo 'Doploying Container'
+                echo 'Doploying Containers'
                 echo 'Stopping all md services'
                 sh 'docker stop $(docker ps -a -q)'
                 sh 'docker system prune -f'
